@@ -29,7 +29,7 @@ public class UI {
     public static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
     public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
 
-
+    //Method clearSreen() -> Handling exceptions and clearing screen:
     public static void clearScreen() {//https://stackoverflow.com/questions/2979383/java-clear-the-console
         System.out.print("\033[H\033[2J");
         System.out.flush();

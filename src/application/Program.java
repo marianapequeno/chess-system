@@ -30,10 +30,10 @@ public class Program {
                 ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
             } catch (ChessException e) {
                 System.out.println(e.getMessage());
-                sc.nextLine();//Para aguardar o usuário apertar a tecla 'enter'
+                sc.nextLine();//Para aguardar o usuário apertar a tecla 'enter' (Handling exceptions and clearing screen)
             } catch (InputMismatchException e) {
                 System.out.println(e.getMessage());
-                sc.nextLine();//Para aguardar o usuário apertar a tecla 'enter'
+                sc.nextLine();//Para aguardar o usuário apertar a tecla 'enter' (Handling exceptions and clearing screen)
             }
         }
 
