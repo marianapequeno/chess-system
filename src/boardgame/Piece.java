@@ -22,7 +22,7 @@ public class Piece {
     public boolean isThereAnyPossibleMove() {
         return true;
     }
-    
+
 
     protected Board getBoard() {
         return board;
