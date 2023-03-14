@@ -18,7 +18,7 @@ public class Program {
         ChessMatch chessMatch = new ChessMatch();
         List<ChessPiece> captured = new ArrayList<>();
 
-        while (true){
+        while (!chessMatch.getCheckMate()){
             try{
                 UI.clearScreen();//Faz sempre limpar a tela após input de dados
                 UI.printMatch(chessMatch, captured);
@@ -47,6 +47,9 @@ public class Program {
                 sc.nextLine();//Para aguardar o usuário apertar a tecla 'enter' (Handling exceptions and clearing screen)
             }
         }
+
+        UI.clearScreen();
+        UI.printMatch(chessMatch, captured);
 
 
     }
